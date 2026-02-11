@@ -6,9 +6,10 @@
     <title>Formulários inteligentes</title>
     <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="../style/index.css">
-    
+
 </head>
 <body>
+    <!-- Formulario aula -->
     <form id="form_inscricao">
         <label>Nome:</label>
         <input type="text" id="nome">
@@ -21,7 +22,20 @@
         <br>
         <button type="button" onclick="validar()">Enviar</button>
     </form>
+    <br>
     <p id="mensagem"></p>
+    
+    <!-- Desafio 1 -->
+    <form action="form_senha">
+        <label>Senha:</label>
+        <input type="password" id="senha1">
+        <label>Digite novamente:</label>
+        <input type="password" id="senha2">
+        <button type="button" onclick="validar_desafio1()">Enviar senha</button>
+    </form>
+    <p id="mensagem1"></p>
+
+
 
     <script src="../scripts/index.js"></script>
 </body>
