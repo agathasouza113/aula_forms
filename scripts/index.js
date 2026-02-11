@@ -34,4 +34,30 @@ function validar_desafio1(){
         mensagem1.style.color = "red";
     }
 }
+ function validar_desafio2(){
+    const sim = document.getElementById("sim");
+    const idade = document.getElementById("idade_desafio2").value;
+
+    if(sim.checked || idade > 60){
+        mensagem2.innerText = "Válido";
+        mensagem2.style.color = "darkgreen";
+    }else{
+        mensagem2.innerText = "Inválido";
+        mensagem2.style.color = "red";
+    }
+
+ }
+
+ function validar_desafio3(){
+    const nome = document.getElementById("nome3").value;
+    const idade = document.getElementById("idade3").value;
+
+    if(nome.length >0 && idade >0){
+        mensagem3.innerText = "Está certo";
+        mensagem3.style.color = "darkgreen";
+    }else{
+        mensagem3.innerText = "Está errado";
+        mensagem3.style.color = "red"
+    }
+ }
     
