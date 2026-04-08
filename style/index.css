@@ -16,16 +16,36 @@
 
 body {
   background-color: #f0f0f0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px 20px;
-  gap: 40px;
-} 
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* desktop */
+  gap: 1.87rem;
+  padding: 1.87rem 1.25rem;
+  justify-items: center;
+}
+
+/*ESSE É O CELULAR */
+@media (max-width: 600px) {
+  body {
+    grid-template-columns: 1fr;
+    font-size: .8rem;
+  }
+}
+
+/*  ESSE É O TABLET */
+@media (min-width: 601px) and (max-width: 1024px) {
+  body {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+  
+  button:hover {
+  box-shadow: 0px 0px 0px none;
+  transform: translate(none none);
+}
 
 .forms {
   width: 100%;
-  max-width: 400px;
+  max-width: 350px;
   border: 2px solid var(--primary);
   padding: 30px;
   background-color: var(--secondary);
@@ -104,5 +124,4 @@ p[id^="mensagem"] {
   font-weight: bold;
   color: var(--primary);
 }
-
 
